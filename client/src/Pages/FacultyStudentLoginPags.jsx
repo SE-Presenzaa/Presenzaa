@@ -180,7 +180,7 @@ const FacultyStudentLoginPags = () => {
                 <div className="col-md-6">
                     <div className="row m-5">
                         <div className="col-md-8 m-auto border center" style={{ backgroundColor: "tomato", borderRadius: "1.2rem", padding: "1rem 1rem 0rem 1rem" }}>
-                            <div><h1 className="text-center" style={{color:"white"}}>PRESENZAA</h1></div>
+                            <div><h1 className="justify-content-center text-center" style={{color:"white"}}>PRESENZAA</h1></div>
                         </div>  
                     </div>
                 </div>

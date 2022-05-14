@@ -1,0 +1,11 @@
+
+
+#mybg {
+    background: url('./Images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+    
+}
