@@ -1,0 +1,11 @@
+
+
+#studentbg {
+    background: url('./Images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+    
+}

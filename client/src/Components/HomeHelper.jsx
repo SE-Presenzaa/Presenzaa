@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { studentLogout, newerChats, previousChats} from '../redux/action/studentAction'
+import '../Style/adminLogin.css'
 
 
 const Home = () => {
@@ -26,8 +27,8 @@ const Home = () => {
         <div className="container-fluid">
             <div className="row">
                 <div className="col">
-                    <nav className="navbar navbar-expand-lg navbar-light  bg-light">
-                        <h4 className="navbar-brand mt-1" href="">SRM</h4>
+                    <nav className="navbar navbar-expand-lg navbar-light " style={{backgroundColor: "#EFC050"}}>
+                        <h4 className="navbar-brand mt-1" href="">PRESENZAA</h4>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

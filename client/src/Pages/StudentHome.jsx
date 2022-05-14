@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import { useSelector } from 'react-redux'
 import { Link, useHistory } from 'react-router-dom'
 import HomeHelper from '../Components/HomeHelper'
+import '../Style/studentHome.css'
 
 const Home = () => {
     const store = useSelector((store) => store)
@@ -10,6 +11,7 @@ const Home = () => {
     return (
         <div>
             {store.student.isAuthenticated ? <>
+                <div id = "studentbg">
                 <HomeHelper />
                 <div className="container">
                     <div className="row">
@@ -19,18 +21,18 @@ const Home = () => {
                         <div className="col-md-8 mt-5">
                             <div className="row">
                                 <div className="col-md-5">
-                                    <div className="card" style={{ width: "18rem" }}>
+                                    <div className="card" style={{ backgroundColor: "#EFC050", color: "white", width: "18rem" }}>
                                         <img className="card-img-top" src={store.student.student.student.avatar} alt="Card image cap" />
                                         <div className="card-body">
                                             <h5 className="card-title">{store.student.student.student.name}</h5>
                                             <h5 className="card-title">{store.student.student.student.registrationNumber}</h5>
-                                            <Link to='/student/updateProfile'>UPDATE PROFILE</Link>
+                                            <a type="button" class="btn btn-success" href='/student/updateProfile'>UPDATE PROFILE</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-7 bg-dark  text-white">
-                                    <table className="table ">
-                                        <tbody className="text-white">
+                                <div className="col-md-7" style={{backgroundColor: "#8a338a"}}>
+                                    <table className="table" style={{color: "white"}}>
+                                        <tbody>
                                             <tr>
                                                 <td>Name</td>
                                                 <td>{store.student.student.student.name}</td>
@@ -99,6 +101,7 @@ const Home = () => {
 
                     </div>
                 </div>
+            </div>
 
             </> : (history.push('/'))}
         </div>
