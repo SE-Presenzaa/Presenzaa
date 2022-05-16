@@ -5,7 +5,8 @@ import {fetchAttendence} from '../redux/action/studentAction'
 import axios from 'axios'
 import HomeHelper from '../Components/HomeHelper'
 import { useHistory } from 'react-router-dom'
-import '../Style/studentHome.css'
+import '../Style/Home.css'
+
 
 const Home = () => {
     const store = useSelector(store => store)
@@ -18,13 +19,13 @@ const Home = () => {
     },[])
 
     return (
-        <div id="mybg">
+        <div id="mynewbg">
             {store.student.isAuthenticated ? <>
                 <HomeHelper />
                 <div className="container">
                     <div className="row mt-5">
-                        <div className="col-md-6 m-auto">
-                            <table className="table border" style={{backgroundColor:"#8a338a", color:"white", borderRadius:"10px"}}>
+                        <div className="col-md-6 m-auto" >
+                            <table className="table" id="mytable">
                                 <thead>
                                     <tr>
                                         <th scope="col">S.No</th>

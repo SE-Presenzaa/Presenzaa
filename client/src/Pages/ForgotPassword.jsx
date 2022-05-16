@@ -59,11 +59,17 @@ const ForgotPassword = (props) => {
 
 
     return (
+        <div id="mynewbg">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div className="container mt-5">
             <div className="row">
                 <div className="col-md-4 m-auto">
                     {!helper ? <>
-                        <form noValidate onSubmit={sendOTPHandler}>
+                        <form noValidate onSubmit={sendOTPHandler} id="mytable">
                             <div className="form-group">
                                 <label htmlFor="exampleInputEmail11">Email</label>
                                 <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" className={classnames('form-control', {
@@ -110,6 +116,32 @@ const ForgotPassword = (props) => {
                         </>}
                 </div>
             </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />        
+        
         </div>
     )
 }

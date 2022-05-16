@@ -74,10 +74,11 @@ const AttendenceFaculty = () => {
     return (
         <div>
             {store.faculty.isAuthenticated ? <>
+            <div id="mynewbg">
                 <FacultyHomeHelper />
-                {store.faculty.fetchedStudentsHelper && <div className="row justify-content-center mt-4 ">
+                {store.faculty.fetchedStudentsHelper && <div className="row justify-content-center mt-4">
                     <div className="col-md-4">
-                        <form noValidate onSubmit={formHandler}>
+                        <form noValidate onSubmit={formHandler} id="mytable">
                             <div className="form-group">
                                 <label htmlFor="branchId">Department</label>
                                 <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
@@ -133,15 +134,33 @@ const AttendenceFaculty = () => {
                                     }
                                 </div>
                             </div>
-                            {!isLoading && <button type="submit" className="btn btn-info  ">Search</button>}
+                            {!isLoading && <button type="submit" className="btn btn-info">Search</button>}
                         </form>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     </div>
-                </div>}
+                </div>
+                }
 
 
                 {!store.faculty.fetchedStudentsHelper && <div className="row  justify-content-center mt-4">
                     <div className="col-md-4">
-                        <form onSubmit={secondFormHandler}>
+                        <form onSubmit={secondFormHandler} id="mytable">
                             <div className="form-group">
                                 <label htmlFor="subjectId">Subject Code</label>
                                 <select required onChange={(e) => setSubjectCode(e.target.value)} className="form-control" id="subjectId">
@@ -186,11 +205,28 @@ const AttendenceFaculty = () => {
                                     }
                                 </div>
                             </div>
-                            {!isLoading2 && <button type="submit" className="btn btn-info ml-1  ">Submit</button>}
+                            {!isLoading2 && <button type="submit" className="btn btn-info">Submit</button>}
                         </form>
+                        <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     </div>
                 </div>
-                }</> : (history.push('/'))}
+                }</div></> : (history.push('/'))}
             
         </div>
     )

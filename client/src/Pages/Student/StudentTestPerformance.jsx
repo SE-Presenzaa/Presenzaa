@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getMarks } from '../../redux/action/studentAction'
 import HomeHelper from '../../Components/HomeHelper'
 import { useHistory } from 'react-router-dom'
+import "../../Style/Home.css"
 
 const StudentTestPerformance = () => {
     const store = useSelector(store => store)
@@ -19,13 +20,14 @@ const StudentTestPerformance = () => {
 
         <>
             {store.student.isAuthenticated ? <>
+                <div id="mynewbg">
                 <HomeHelper />
 
                 <div className="container">
 
                     {store.student.allMarks.CycleTest1 &&
                         <div className="row mt-3">
-                            <div className="col-md-8 m-auto">
+                            <div className="col-md-8 m-auto"  id="mytable">
                                 {store.student.allMarks.CycleTest1.length !== 0 ? <>
                                     <h4>Cycle Test 1</h4>
                                     <table className="table border">
@@ -62,7 +64,7 @@ const StudentTestPerformance = () => {
 
                     {store.student.allMarks.CycleTest2 &&
                         <div className="row mt-3">
-                            <div className="col-md-8 m-auto">
+                            <div className="col-md-8 m-auto"  id="mytable">
                                 {store.student.allMarks.CycleTest2.length !== 0 ? <>
                                     <h4>Cycle Test 2</h4>
                                     <table className="table">
@@ -97,7 +99,7 @@ const StudentTestPerformance = () => {
 
                     {store.student.allMarks.Semester &&
                         <div className="row mt-3">
-                            <div className="col-md-8 m-auto">
+                            <div className="col-md-8 m-auto"  id="mytable">
                                 {store.student.allMarks.Semester.length !== 0 ? <>
                                     <h4>Semester</h4>
                                     <table className="table">
@@ -130,6 +132,21 @@ const StudentTestPerformance = () => {
                         </div>
 
                     }
+                </div>
+                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
                 </div></> : (history.push('/'))}
 
         </>

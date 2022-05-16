@@ -4,6 +4,7 @@ import { Link, useHistory } from 'react-router-dom'
 
 
 import FacultyHomeHelper from '../Components/FacultyHomeHelper'
+import '../Style/studentHome.css'
 
 
 const FacultyInterface = () => {
@@ -12,6 +13,7 @@ const FacultyInterface = () => {
     return (
         <>
             {store.faculty.isAuthenticated ? <>
+            <div id="mynewbg">
                 <FacultyHomeHelper />
                 <div className="container">
                     <div className="row mt-5">
@@ -26,11 +28,12 @@ const FacultyInterface = () => {
                                         <div className="card-body">
                                             <h5 className="card-title">{store.faculty.faculty.faculty.name}</h5>
                                             <h5 className="card-title">{store.faculty.faculty.faculty.registrationNumber}</h5>
-                                            <Link to='/faculty/updateProfile'>UPDATE PROFILE</Link>
+                                            {/* <Link to='/faculty/updateProfile'>UPDATE PROFILE</Link> */}
+                                            <a type="button" class="btn btn-success" href="/faculty/updateProfile"><i class="fas fa-refresh" aria-hidden="true"></i> | UPDATE PROFILE </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-7">
+                                <div className="col-md-7" id = "mytable">
                                     <table className="table border">
                                         <tbody>
                                             <tr>
@@ -85,6 +88,17 @@ const FacultyInterface = () => {
 
                     </div>
                 </div>
+            
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        
+            </div>
 
             </> : (history.push('/'))}
            

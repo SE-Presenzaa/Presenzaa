@@ -49,12 +49,14 @@ const AdminAddSubject = () => {
 
     return (
         <div>
-            {store.admin.isAuthenticated ? <> <AdminHomeHelper />
+            {store.admin.isAuthenticated ? <> 
+            <div id="mynewbg">
+            <AdminHomeHelper />
                 <div className="container mt-5">
                     <div className="row justify-content-center">
                         <div className="col-md-4">
-                            <div className="d-flex justify-content-md-center vh-100">
-                                <form noValidate onSubmit={formHandler}>
+                            <div className="d-flex justify-content-md-center">
+                                <form noValidate onSubmit={formHandler} id="mytable">
                                     <div className="form-group">
                                         <label htmlFor="snameId">Subject Name</label>
                                         <input onChange={(e) => setSubjectName(e.target.value)} type="text" className={classnames("form-control",
@@ -121,12 +123,19 @@ const AdminAddSubject = () => {
                                         </div>
                                     </div>
                                     {!isLoading && <button type="submit" className="btn btn-info  ">Add Subject</button>}
-                                   
-                                    
                                 </form>
+                            
                             </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
                         </div>
                     </div>
+                </div>
                 </div></>: (history.push('/'))}
         </div>
     )

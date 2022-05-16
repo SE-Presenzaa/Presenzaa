@@ -33,11 +33,12 @@ const AdminGetAllFaculty = () => {
     return (
         <div>
             {store.admin.isAuthenticated ? <>
+            <div id="mynewbg">
                 <AdminHomeHelper />
                 <div className="container">
                     <div className="row mt-5">
                         <div className="col-md-4">
-                            <form noValidate onSubmit={formHandler}>
+                            <form noValidate onSubmit={formHandler} id="mytable">
                                 <div className="form-group">
                                     <label htmlFor="departmentId">Department</label>
                                     <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
@@ -86,7 +87,7 @@ const AdminGetAllFaculty = () => {
                         </div>
                         <div className="col-md-8">
 
-                            {store.admin.allStudent.length !== 0 && <table className="table border">
+                            {store.admin.allStudent.length !== 0 && <table className="table border" id="mytable">
                                 <thead>
                                     <tr>
                                         <th scope="col">S.No</th>
@@ -114,6 +115,27 @@ const AdminGetAllFaculty = () => {
                         </div>
                     </div>
                 </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            </div>
             </> : (history.push('/'))}
         </div>
     )

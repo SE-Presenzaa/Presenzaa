@@ -52,11 +52,11 @@ const StudentUpdateProfile = () => {
         return (
             <div>
                 {store.student.isAuthenticated ? <>
-                    <div id = "studentbg">
+                    <div id = "mynewbg">
                     <HomeHelper />
                     <div className="container mt-5">
                         <div className="row ">
-                            <div className="col-md-5 w-100 m-auto" style={{backgroundColor:"#8a338a", color:"white", padding:"15px 15px 15px 15px", borderRadius:"10px"}}>
+                            <div className="col-md-5 w-100 m-auto" id="mytable">
                                 <form onSubmit={formHandler}>
                                     <div className="form-group">
                                         <label htmlFor="inputId">Profile Picture</label>
@@ -88,6 +88,7 @@ const StudentUpdateProfile = () => {
                                         <input onChange={(e) => setAadharCard(e.target.value)} type="number" className="form-control" id="aadharId" />
                                     </div>
                                     <button type="submit" className="btn btn-success">Update</button>
+                                    <br />
                                 </form>
                             </div>
                         </div>

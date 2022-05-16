@@ -11,6 +11,7 @@ const AdminHome = () => {
         <div>
            
             {store.admin.isAuthenticated ? <>
+            <div id="mynewbg">
                 <AdminHomeHelper />
                 <div className="container">
                     <div className="row mt-5">
@@ -29,7 +30,7 @@ const AdminHome = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-7">
-                                    <table className="table border">
+                                    <table className="table border" id="mytable">
                                         <tbody>
                                             <tr>
                                                 <td>Name</td>
@@ -66,6 +67,18 @@ const AdminHome = () => {
                         </div>
                     </div>
                 </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            
+            </div>
                 </> : (history.push('/'))}
                 
         </div>

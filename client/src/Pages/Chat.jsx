@@ -97,11 +97,12 @@ const Chat = (props) => {
     return (
         <div>
             {store.student.isAuthenticated ? <>
+                <div id="mynewbg">
                 <HomeHelper />
-                <div className="container">
+                <div className="container center-div">
                     <div className="row">
                         <div className="col-md-5">
-                            <form className="form-inline" onSubmit={formHandler}>
+                            <form className="form-inline form-center" onSubmit={formHandler}  id="mytable">
                                 <div className="form-group ">
                                     {/* <input value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Type here.." type="text" className="form-control" /> */}
                                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Type here.." type="text" className="form-control" />
@@ -125,6 +126,39 @@ const Chat = (props) => {
 
                     </div>
 
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+                
                 </div>
             </> : (history.push('/'))}
             

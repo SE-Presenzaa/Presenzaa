@@ -23,6 +23,7 @@ const RecieverUserDetails = (props) => {
     return (
         <div>
             {store.student.isAuthenticated ? <>
+            <div id="mynewbg">
                 <HomeHelper />
                 <div className="container">
                     <div className="row mt-5">
@@ -37,12 +38,12 @@ const RecieverUserDetails = (props) => {
                                         <div className="card-body">
                                             <h5 className="card-title">{store.student.regNumStudent.name}</h5>
                                             <h5 className="card-title">{}</h5>
-                                            <Link to={`/chat/${store.student.regNumStudent.registrationNumber}.${store.student.student.student.registrationNumber}`}>CHAT</Link>
+                                            <Link className="btn btn-info" to={`/chat/${store.student.regNumStudent.registrationNumber}.${store.student.student.student.registrationNumber}`}>CHAT</Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-7">
-                                    <table className="table border">
+                                    <table className="table border" id="mytable">
                                         <tbody>
                                             <tr>
                                                 <td>Name</td>
@@ -84,6 +85,19 @@ const RecieverUserDetails = (props) => {
 
                     </div>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
 
 
 

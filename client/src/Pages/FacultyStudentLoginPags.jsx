@@ -100,7 +100,7 @@ const FacultyStudentLoginPags = () => {
                                 <h3 className="text-center " style={{color:"white"}}>FACULTY</h3>
                                 <form noValidate onSubmit={facultyFormHandler}>
                                     <div className="form-group">
-                                        <label htmlFor="facRegId" style={{color:"white"}}>Registration Number</label>
+                                        <label htmlFor="facRegId" style={{color:"white"}}>Faculty ID</label>
                                         <input onChange={(e) => setFacultyRegNum(e.target.value)} type="text" value={facultyRegNum} className={classnames('form-control', {
                                             'is-invalid': errors.registrationNumber
                                         })}
@@ -141,7 +141,7 @@ const FacultyStudentLoginPags = () => {
                                 <h3 className="text-center" style={{color:"white"}} >STUDENT</h3>
                                 <form noValidate onSubmit={studentFormHandler}>
                                     <div className="form-group">
-                                        <label htmlFor="studentId" style={{color:"white"}} >Registration Number</label>
+                                        <label htmlFor="studentId" style={{color:"white"}} >Student Registration Number</label>
                                         <input onChange={(e) => setStudentRegNum(e.target.value)} type="text" value={studentRegNum} className={classnames('form-control', {
                                             'is-invalid': errorsHelper.registrationNumber
                                         })}
@@ -181,7 +181,10 @@ const FacultyStudentLoginPags = () => {
                     <div className="row m-5">
                         <div className="col-md-8 m-auto border center" style={{ backgroundColor: "tomato", borderRadius: "1.2rem", padding: "1rem 1rem 0rem 1rem" }}>
                             <div><h1 className="justify-content-center text-center" style={{color:"white"}}>PRESENZAA</h1></div>
-                        </div>  
+                        </div>
+                       
+                        <a className='btn btn-info justify-content-center' href="/adminLogin" style={{color:"white", margin:"auto"}}><i class="fa fa-sign-in" aria-hidden="true"></i> ADMIN LOGIN</a>
+                         
                     </div>
                 </div>
             </div>

@@ -31,11 +31,13 @@ const AdminGetAllFaculty = () => {
     return (
         <div>
             {store.admin.isAuthenticated ? <>
+                <div id="mynewbg">
                 <AdminHomeHelper />
+                
                 <div className="container">
                     <div className="row mt-5">
                         <div className="col-md-4">
-                            <form form-inline noValidate onSubmit={formHandler}>
+                            <form form-inline noValidate onSubmit={formHandler} id="mytable">
                                 <div className="form-group">
                                     <label htmlFor="departmentId">Department</label>
                                     <select onChange={(e) => setDepartment(e.target.value)} className={classnames("form-control",
@@ -63,12 +65,26 @@ const AdminGetAllFaculty = () => {
                                 </div>
                                 {!isLoading && <button type="submit" className="btn btn-info btn-block  ">Search</button>}
                             </form>
-
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
 
                         </div>
                         <div className="col-md-8">
                             
-                            {store.admin.allFaculty.length !== 0 && <table className="table border">
+                            {store.admin.allFaculty.length !== 0 && 
+                            
+                            <table className="table border" id="mytable">
                                 <thead>
                                     <tr>
                                         <th scope="col">S.No</th>
@@ -91,11 +107,27 @@ const AdminGetAllFaculty = () => {
                                         )
                                     }
                                 </tbody>
-                            </table>}
+                            </table>
+                            }
                            
                         </div>
                     </div>
                 </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+                
+            </div>
             </> : (history.push('/'))}
         </div>
     )

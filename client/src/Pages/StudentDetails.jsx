@@ -67,10 +67,11 @@ const StudentDetails = () => {
     return (
         <div>
             {store.student.isAuthenticated ? <>
+            <div id="mynewbg">
                 <HomeHelper />
                 <div className="container">
                     {result.length === 0 && <div className="row">
-                        <div className="col-md-3 border mt-4">
+                        <div className="col-md-3 border mt-4" id="mytable">
                             <div className="row mt-3">
                                 <div className="col mb-2">
                                     <form className="form-inline" onSubmit={formHandler}>
@@ -127,7 +128,7 @@ const StudentDetails = () => {
                             <div className="row justify-content-center ">
                                 <div className="col">
                                     <div className="row">
-                                        <div className="col-md-6 border">
+                                        <div className="col-md-6 border" id="mytable">
                                             <h4 className="text-center">New Chats</h4>
                                             <table className="table">
                                                 <tbody>
@@ -143,7 +144,7 @@ const StudentDetails = () => {
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div className="col-md-6 border">
+                                        <div className="col-md-6 border"  id="mytable">
                                             <h4 className="text-center">Older Chats</h4>
                                             <table className="table">
                                                 <tbody>
@@ -191,6 +192,17 @@ const StudentDetails = () => {
                         </div>
                     </div>}
 
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 </div></> : (history.push('/'))}
             
         </div>

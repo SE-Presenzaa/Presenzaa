@@ -4,6 +4,8 @@ import { useHistory } from 'react-router-dom'
 import { adminLogin } from '../redux/action/adminAction'
 import classnames from 'classnames'
 import '../Style/adminLogin.css'
+// import {RemoveScrollBar} from 'react-remove-scroll-bar';
+
 
 
 
@@ -46,6 +48,7 @@ const LoginPage = () => {
 
     
     return (
+        
         <div id="mybg">
             <div className="container-fluid">
                 <div className="row justify-content-center">
@@ -62,7 +65,7 @@ const LoginPage = () => {
                                 <h3 className="text-center" style = {{color:"white"}} >ADMIN</h3>
                                 <form noValidate onSubmit={fromHandler}>
                                     <div className="form-group">
-                                        <label htmlFor="emailId" style = {{color:"white"}}>Registration Number</label>
+                                        <label htmlFor="emailId" style = {{color:"white"}}>Admin ID</label>
                                         <input onChange={(e) => setRegistrationNumber(e.target.value)} type="text" value={registrationNumber} className={classnames("form-control form-control-lg",
                                             {'is-invalid' : error.registrationNumber
                                             

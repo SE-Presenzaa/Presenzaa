@@ -14,10 +14,11 @@ const StudentSubjectList = () => {
     return (
         <>
             {store.student.isAuthenticated ? <>
+            <div id="mynewbg">
                 <HomeHelper />
                 <div className="container">
                     <div className="row mt-5">
-                        <div className="col-md-6 m-auto">
+                        <div className="col-md-6 m-auto" id="mytable">
                             <table className="table border">
                                 <thead>
                                     <tr>
@@ -44,7 +45,27 @@ const StudentSubjectList = () => {
                             </table>
                         </div>
                     </div>
-                </div></> : (history.push('/'))}
+                </div>
+                <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        
+        </div></> : (history.push('/'))}
            
             </>
     )

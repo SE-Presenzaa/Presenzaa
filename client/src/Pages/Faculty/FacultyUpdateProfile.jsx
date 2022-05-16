@@ -47,10 +47,11 @@ const FacultyUpdateProfile = () => {
     return (
         <div>
             {store.faculty.isAuthenticated ? <>
+            <div  id="mynewbg">
                 <FacultyHomeHelper />
                 <div className="container mt-5">
                     <div className="row ">
-                        <div className="col-md-5 w-100 m-auto">
+                        <div className="col-md-5 w-100 m-auto" id = "mytable1">
                             <form onSubmit={formHandler}>
                                 <div className="form-group">
                                     <label htmlFor="inputId">Profile Picture</label>
@@ -86,6 +87,19 @@ const FacultyUpdateProfile = () => {
                             </form>
                         </div>
                     </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 </div></> : (history.push('/'))}
             
         </div>

@@ -1,11 +1,21 @@
-
-
-#mybg {
-    background: url('./Images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg') no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:100% 100%;
-    
-}
+::-webkit-scrollbar {
+  width: 0px; 
+  overflow: overlay;
+  background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+  width: 0px;
+  overflow: overlay;
+  background: linear-gradient(90deg, #6a0979, #00d4ff, #020024);
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 0px; 
+    overflow: overlay;
+    background:linear-gradient(90deg, #6a0979, #00d4ff, #020024);;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  width: 0px; 
+  overflow: overlay;  
+  background:linear-gradient(90deg, #6a0979, #00d4ff, #020024);
+  
+  }

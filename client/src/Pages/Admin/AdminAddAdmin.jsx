@@ -58,11 +58,13 @@ const AdminAddAdmin = () => {
     return (
 
         <div>
-            {store.admin.isAuthenticated ? (<><AdminHomeHelper />
+            {store.admin.isAuthenticated ? (<>
+            <div id="mynewbg">
+            <AdminHomeHelper />
                 <div className="container mt-5">
                     <div className="row ">
                         <div className="col">
-                            <form noValidate onSubmit={formHandler}>
+                            <form noValidate onSubmit={formHandler} id="mytable">
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
@@ -131,6 +133,23 @@ const AdminAddAdmin = () => {
                             </form>
                         </div>
                     </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 </div></>) : (history.push('/'))}
 
         </div>

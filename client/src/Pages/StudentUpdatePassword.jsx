@@ -4,7 +4,7 @@ import { Link, useHistory } from 'react-router-dom'
 import classnames from 'classnames'
 import HomeHelper from '../Components/HomeHelper'
 import { studentUpdatePassword } from '../redux/action/studentAction'
-
+import '../Style/Home.css'
 
 
 
@@ -30,12 +30,13 @@ const StudentUpdatePassword = () => {
     return (
         <div>
             {store.student.isAuthenticated ? <>
+                <div id="mynewbg">
                 <HomeHelper />
-                <div className="container m-5">
-                    <div className="row m-5">
-                        <div className="col-md-5 m-auto">
+                <div className="container m-5 justify-content-center">
+                    <div className="row m-6">
+                        <div className="col-md-5 m-auto" id="mytable">
                             <form noValidate onSubmit={formHandler}>
-                                <div className="form-group">
+                                <div className="form-group" >
                                     <label htmlFor="emailId">Old Password</label>
                                     <input onChange={(e) => setOldPassword(e.target.value)} type="password" value={oldPassword} className={classnames("form-control",
                                         {
@@ -58,14 +59,26 @@ const StudentUpdatePassword = () => {
                                     })} value={confirmNewPassword} type="password" id="passwordCId" />
                                     {error.confirmNewPassword && (<div className="invalid-feedback">{error.confirmNewPassword}</div>)}
                                 </div>
-                                <button type="submit" class="btn btn-info btn-block ">Update Password</button>
+                                <button type="submit" class="btn btn-info btn-block">Update Password</button>
                             </form>
                         </div>
                     </div>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                
+                
                 </div></> : (history.push('/'))}
-
-           
-
         </div>
     )
 }

@@ -1,0 +1,120 @@
+#mynewbg {
+    /* background-color: #91E7D9; */
+    
+    background: linear-gradient(90deg, #6a0979, #00d4ff, #020024);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+
+    /*background: url('./Images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;*/
+    /* background: linear-gradient(270deg, #ffed00, #ff0000); */
+}
+
+#mytable {
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#mytable1{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#namepadding {
+    padding-right: "20px";
+}
+
+#mybg {
+    background: url('./Images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+    
+}
+
+#students {
+    background: url('./Images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+}
+
+#campus {
+    background: url('./Images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+}
+
+#writing {
+    background: url('./Images/green-chameleon-s9CC2SKySJM-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+}
+
+
+#lecture {
+    background: url('./Images/neonbrand-1-aA2Fadydc-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+}
+
+.center-div {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    }
+
+.form-center {
+    display:flex;
+    justify-content: center;
+  }
+
+::-webkit-scrollbar {
+width: 0px; 
+overflow: overlay;
+background: transparent;
+}
+::-webkit-scrollbar-track {
+width: 0px;
+overflow: overlay;
+background: linear-gradient(90deg, #6a0979, #00d4ff, #020024);
+}
+::-webkit-scrollbar-thumb {
+    width: 0px; 
+    overflow: overlay;
+    background:linear-gradient(90deg, #6a0979, #00d4ff, #020024);;
+}
+::-webkit-scrollbar-thumb:hover {
+width: 0px; 
+overflow: overlay;  
+background:linear-gradient(90deg, #6a0979, #00d4ff, #020024);
+
+}
